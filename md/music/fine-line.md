@@ -45,7 +45,7 @@ The production is amazing and highlights every piece of instrumentation this son
 
 A slower song with a piano as the main melody.
 The lyrics and vocals by Harry are especially powerful on this track.
-The lyrics, "_What if I'm someone I don't want around?_" are especially powerful.
+The lyrics, "_What if I'm someone I don't want around?_" are especially confessional.
 
 #### She
 
