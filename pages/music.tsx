@@ -12,7 +12,7 @@ const Music = (props: {
     return (
         <div className="content">
             <Head>
-                <title>Music Reviews</title>
+                <title>Album Reviews</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 

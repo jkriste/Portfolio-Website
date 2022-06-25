@@ -4,6 +4,12 @@ import {Markdown} from './Markdown';
 import {PostData} from '../loader';
 import {PostMeta} from './PostMeta';
 
+const css = `
+    h4 {
+        color: #0D7377;
+    }
+`
+
 export const MusicPost: React.FunctionComponent<{ post: PostData }> = ({post,}) => {
     const {title, artist, score} = post;
     return (
@@ -27,6 +33,7 @@ export const MusicPost: React.FunctionComponent<{ post: PostData }> = ({post,}) 
             <Author post={post}/>
 
             <div className="music-post-content">
+                <style>{css}</style>
                 <Markdown source={post.content}/>
             </div>
         </div>
