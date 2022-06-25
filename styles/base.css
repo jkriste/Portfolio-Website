@@ -12,7 +12,7 @@ body,
 
 /* font sizing */
 body {
-    color: #212121;
+    color: #d0cec8;
     font-size: 100%;
     font-family: Helvetica, sans-serif;
     line-height: 1.6;
@@ -419,4 +419,16 @@ hr {
     background: limegreen;
     height: 100%;
     border-radius: 9px;
+}
+
+table, th, td {
+    border: 1px solid #d0cec8;
+    border-collapse: collapse;
+    padding: 3px 3px 3px 3px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

@@ -32,7 +32,7 @@ const Music = (props: {
 export default Music;
 
 export const getStaticProps = async () => {
-    const musicMarkdown = await loadMarkdownFile('introduction.md')
+    const musicMarkdown = await loadMarkdownFile('music.md')
     const music = await loadMusicPosts()
 
     await generateRSS(music)
