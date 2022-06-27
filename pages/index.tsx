@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import {generateRSS} from '../rssUtil';
 import {Markdown} from '../components/Markdown';
-import {PostData, loadBlogPosts, loadMusicPosts, loadMarkdownFile} from '../loader';
+import {PostData, loadMusicPosts, loadMarkdownFile} from '../loader';
 import {PostCard} from '../components/PostCard';
+import React from 'react';
 
 const Home = (props: {
     introduction: string;
@@ -102,11 +103,10 @@ export const getStaticProps = async () => {
     const features = await loadMarkdownFile('features.md');
     const readmeFile = await import(`../${'README.md'}`);
     const readme = readmeFile.default;
-    const posts = await loadBlogPosts();
     const music = await loadMusicPosts();
 
     // comment out to turn off RSS generation during build step.
-    await generateRSS(posts);
+    await generateRSS(music);
 
     const props = {
         introduction: introduction.contents,

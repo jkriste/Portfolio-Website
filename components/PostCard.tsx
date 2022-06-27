@@ -16,18 +16,18 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
                 )}
                 <div className="post-card-title">
                     {post.title && <h2>{post.title}</h2>}
-                    {false && post.subtitle && <p>{post.subtitle}</p>}
+                    {post.subtitle && <p>{post.subtitle}</p>}
                     <p>
-                        {props.post.datePublished
-                            ? format(new Date(props.post.datePublished), 'MMMM Do, YYYY')
-                            : ''}
+                        {props.post.artist ?
+                            props.post.artist :
+                            (props.post.datePublished ?
+                                format(new Date(props.post.datePublished), 'MMMM Do, YYYY') : '')
+                        }
                     </p>
                     <div className="flex-spacer"></div>
-                    {false && (
-                        <div className="tag-container">
-                            {post.tags && (post.tags || []).map((tag) => <Tag tag={tag}/>)}
-                        </div>
-                    )}
+                    <div className="tag-container">
+                        {post.tags && (post.tags || []).map((tag, j) => <Tag tag={tag} key={j}/>)}
+                    </div>
                 </div>
             </div>
         </a>

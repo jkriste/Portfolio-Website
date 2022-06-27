@@ -117,11 +117,11 @@ a:visited {
 
 .content {
     width: 100%;
-    max-width: 700px;
+    max-width: 720px;
 }
 
 .content > * {
-    padding: 0 10px;
+    padding: 0 10px 0 10px;
 }
 
 .content img {

@@ -16,12 +16,11 @@ const App: React.FC = ({Component, pageProps}: any) => {
                 {globals.googleAnalyticsId && (
                     <script dangerouslySetInnerHTML={{
                         __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('globals', '${globals.googleAnalyticsId}');
-            `,
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('globals', '${globals.googleAnalyticsId}');
+                        `,
                     }}></script>
                 )}
             </Head>

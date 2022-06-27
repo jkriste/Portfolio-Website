@@ -32,9 +32,11 @@ export const MusicPost: React.FunctionComponent<{ post: PostData }> = ({post,}) 
 
             <Author post={post}/>
 
-            <div className="music-post-content">
-                <style>{css}</style>
-                <Markdown source={post.content}/>
+            <div className="content">
+                <div className="music-post-content">
+                    <style>{css}</style>
+                    <Markdown source={post.content}/>
+                </div>
             </div>
         </div>
     );

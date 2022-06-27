@@ -12,7 +12,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
         <div className="blog-post">
             <PostMeta post={post}/>
             {post.bannerPhoto && (
-                <img className="blog-post-image" src={post.bannerPhoto}/>
+                <img className="blog-post-image" src={post.bannerPhoto} alt="Banner"/>
             )}
 
             <div className="blog-post-title">
