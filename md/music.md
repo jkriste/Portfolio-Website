@@ -3,7 +3,7 @@
 Music is a large driving factor for me.
 While I do anything, whether in the car, in the store, on my computer, I'm always listening to music.
 So, I've dedicated a part of my portfolio website to album reviews.
-Just like most art, I like to review the entire piece as a whole, so I will be sticking to album reviews.
+Just like most art, I like to review the entire piece as a whole, so I won't be reviewing singles.
 Below I'll explain how I rate albums and tally up the final score.
 
 ## How I Rate Albums

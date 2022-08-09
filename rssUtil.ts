@@ -43,7 +43,7 @@ export const generateRSS = async (posts: PostData[]) => {
             description: html,
             url: `${globals.url}/${post.path}`,
             categories: post.tags || [],
-            author: post.author || 'Colin McDonnell',
+            author: post.author || globals.yourName,
             date: new Date(post.datePublished || 0).toISOString(),
         });
     }

@@ -38,7 +38,7 @@ export const getStaticProps = async () => {
     await generateRSS(music)
 
     const props = {
-        musicMarkdown,
+        musicMarkdown: musicMarkdown.contents,
         music
     }
 
